@@ -8,15 +8,6 @@
     font-family: "Abril Fatface", sans-serif;
   }
   
-  a {
-    background-color: #fbcfcf;
-    text-decoration: none;
-    color: white;
-    border-radius: 0.25rem;
-    display: inline-block;
-    padding: 0.1em 0.4em;
-    margin-left: 0.5em;
-  }
   
   #main.navbar {
     max-width: 1300px;
