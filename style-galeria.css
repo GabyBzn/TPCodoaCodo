@@ -19,6 +19,15 @@ h6 {
   font-family: "Fahkwang", sans-serif;
 }
 
+h1 {
+  color: #a37e58;
+  margin: 10px;
+  text-decoration: dotted underline;
+  text-align: center;
+  word-spacing: 10px;
+  letter-spacing: 15px;
+}
+
 a {
   background-color: #fbcfcf;
   text-decoration: none;
