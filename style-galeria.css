@@ -82,6 +82,17 @@ body {
     text-transform: uppercase;
     letter-spacing: 15px;
   }
+
+  
+a {
+  background-color: #fbcfcf;
+  text-decoration: none;
+  color: white;
+  border-radius: 0.25rem;
+  display: inline-block;
+  padding: 0.1em 0.4em;
+  margin-left: 0.5em;
+}
 /* GALERIA */
 .galeria {
     margin: 0 auto;
@@ -154,7 +165,7 @@ body {
   .socialIcons a:hover {
     color: #fcfbe3;
   }
-  
+
 /* FOOTER */
 footer {
     background-color: #755c3b;
