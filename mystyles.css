@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  font-family: "Abril Fatface", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fahkwang", sans-serif;
+}
+
+a {
+  background-color: #fbcfcf;
+  text-decoration: none;
+  color: white;
+  border-radius: 0.25rem;
+  display: inline-block;
+  padding: 0.1em 0.4em;
+  margin-left: 0.5em;
+}
+
+#main.navbar {
+  max-width: 1300px;
+  
+  margin: auto;
+}
+
+/* HEADER */
+.mylogo {
+  background: linear-gradient(#fcfbe3, #cdbb99), no-repeat top right;
+  /* background-size: 100vh; */
+  color: #a37e58;
+  padding: 0;
+  margin: auto;
+}
+.mylogo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar {
+  width: 100%;
+  background: rgba(205, 187, 153, 0.8);
+  position: sticky; 
+  top: 0;
+}
+
+.nav-bar ul {
+  display: flex;
+  margin: 0;
+  padding: 0 100px;
+  justify-content: flex-end;
+ 
+
+}
+
+.nav-bar ul li {
+  list-style: none;
+ 
+}
+
+.nav-bar ul li a {
+  display: block;
+  color: #fff;
+  padding: 0 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 50px;  
+  text-align:center; 
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul li a {
+  border-bottom: none;;
+}
+
+.nav-bar ul li a:hover,
+.nav-bar ul li a.active {
+  background: rgba(252, 251, 227, 0.5);
+}
+
+/* DigiPlanners */
+.digi-planners {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 1rem;
+ 
+}
+
+.digi-planners article {
+  border: 1px solid #E2E2E2;
+  border-radius: 15px;
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.digi-planners figure {
+  display: grid; 
+  grid-template-rows: 200px 50px;
+}
+
+.digi-planners img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+}
+
+.digi-planners figcaption {
+background-color: rgba(163,126,88,.7);
+width: 100%;
+}
+
+.digi-planners figcaption > h3 {
+color: white;
+padding: .75rem;
+font-size: 1.25rem;
+}
+
+.digi-planners p {
+font-size: 1rem;
+line-height: 1.5;
+padding: 1rem .75rem;
+color: #666666;
+}
+
+
+/* IFRAME */
+.mapa {
+  display: block;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  position: relative;
+  margin: 0.5rem;
+  }
+   
+  .iframe-title
+  {
+    color: #a37e58;
+    margin-top: 2%;
+    position: relative;
+  }
+
+
+/* FORMULARIO */
+.container-form {
+  display: block;
+  color: #a37e58;
+  text-shadow: #fbcfcf 0px 1px;
+  /* margin: 2rem; */
+  margin-top: 2%;
+  margin-left: 3%;
+
+}
+
+
+/* ICONOS DE REDES */
+  .socialIcons {
+    font-size: 200%;
+    padding: 1rem 0;
+  }
+  
+  .socialIcons a {
+    color: #a37e58;
+    padding: 0 1rem;
+  }
+  
+  .socialIcons a:hover {
+    color: #fcfbe3;
+  }
+/* FOOTER */
+footer {
+  background-color: #755c3b;
+  padding: 0.75rem;
+  color: #fcfbe3;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.50fr;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 1024px) {
+  nav ul {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .mylogo {
+    background-position: center center;
+    padding: 4em 2em;
+    display: flex;
+    align-items: center;
+  }
+
+  .mylogo p {
+    flex: 1;
+  }
+  .container-form {
+    flex: 1;
+    display: grid;
+  } 
+  .mapa {
+    flex: 1;
+  
+  }
+  
+}
+  .stories {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+
+@media screen and (min-width: 300px) {
+  .container-form {
+    display: grid;
+  }
+  nav ul {
+    width: 50%;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .mapa {
+    display: grid;
+    height: 80%;
+    width: 80%;
+  }
+}
+
