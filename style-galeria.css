@@ -6,7 +6,6 @@
   margin: 0;
 }
 
-
 body {
   font-family: "Abril Fatface", sans-serif;
 }
@@ -168,6 +167,11 @@ nav ul li a {
 .socialIcons a:hover {
   color: #fcfbe3;
 }
+.socialIcons a:visited {
+  color: #cdbb99;
+}
+
+
 /* FOOTER */
 footer {
 background-color: #755c3b;
