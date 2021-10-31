@@ -140,6 +140,21 @@ body {
     transform: scale(0.9);
   }
 
+  /* ICONOS DE REDES */
+  .socialIcons {
+    font-size: 200%;
+    padding: 1rem 0;
+  }
+  
+  .socialIcons a {
+    color: #a37e58;
+    padding: 0 1rem;
+  }
+  
+  .socialIcons a:hover {
+    color: #fcfbe3;
+  }
+  
 /* FOOTER */
 footer {
     background-color: #755c3b;
