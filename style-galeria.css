@@ -1,89 +1,25 @@
- body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Abril Fatface", sans-serif;
-  }
-  
-  
-  #main.navbar {
-    max-width: 1300px;
-    margin: auto;
-  }
-  
-  /* HEADER */
-  .mylogo {
-    background: linear-gradient(#fcfbe3, #cdbb99), no-repeat top right;
-    color: #a37e58;
-    padding: 0;
-    margin: auto;
-  }
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400");
 
-  
-  .nav-bar {
-    width: 100%;
-    background: rgba(205, 187, 153, 0.8);
-    position: sticky;
-    top: 0;
-  }
-  
-  .nav-bar ul {
-    display: flex;
-    margin: 0;
-    padding: 0 100px;
-    justify-content: flex-end;
-   
-  
-  }
-  
-  .nav-bar ul li {
-    list-style: none;
-   
-  }
-  
-  .nav-bar ul li a {
-    display: block;
-    color: #fff;
-    padding: 0 10px;
-    text-decoration: none;
-    text-transform: uppercase;
-    line-height: 50px;  
-    text-align:center; 
-  }
-  nav ul {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  
-  nav ul li a {
-    border-bottom: none;;
-  }
-  
-  .nav-bar ul li a:hover,
-  .nav-bar ul li a.active {
-    background: rgba(252, 251, 227, 0.5);
-  }
-  
-
-body {
-    height: 100vh;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
- h1{
-    text-align: center;
-    text-decoration: double underline;
-    margin-top: 10px;
-    padding-bottom: 65px;
-    color: #fbcfcf;
-    text-transform: uppercase;
-    letter-spacing: 15px;
-  }
 
-  
+body {
+  font-family: "Abril Fatface", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fahkwang", sans-serif;
+}
+
 a {
   background-color: #fbcfcf;
   text-decoration: none;
@@ -93,6 +29,72 @@ a {
   padding: 0.1em 0.4em;
   margin-left: 0.5em;
 }
+
+#main.navbar {
+  max-width: 1300px;
+  
+  margin: auto;
+}
+
+/* HEADER */
+.mylogo {
+  background: linear-gradient(#fcfbe3, #cdbb99), no-repeat top right;
+  /* background-size: 100vh; */
+  color: #a37e58;
+  padding: 0;
+  margin: auto;
+}
+.mylogo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar {
+  width: 100%;
+  background: rgba(205, 187, 153, 0.8);
+  position: sticky; 
+  top: 0;
+}
+
+.nav-bar ul {
+  display: flex;
+  margin: 0;
+  padding: 0 100px;
+  justify-content: flex-end;
+ 
+
+}
+
+.nav-bar ul li {
+  list-style: none;
+ 
+}
+
+.nav-bar ul li a {
+  display: block;
+  color: #fff;
+  padding: 0 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 50px;  
+  text-align:center; 
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul li a {
+  border-bottom: none;;
+}
+
+.nav-bar ul li a:hover,
+.nav-bar ul li a.active {
+  background: rgba(252, 251, 227, 0.5);
+}
+
 /* GALERIA */
 .galeria {
     margin: 0 auto;
@@ -151,37 +153,37 @@ a {
     transform: scale(0.9);
   }
 
-  /* ICONOS DE REDES */
-  .socialIcons {
-    font-size: 200%;
-    padding: 1rem 0;
-  }
-  
-  .socialIcons a {
-    color: #a37e58;
-    padding: 0 1rem;
-  }
-  
-  .socialIcons a:hover {
-    color: #fcfbe3;
-  }
 
+/* ICONOS DE REDES */
+.socialIcons {
+  font-size: 200%;
+  padding: 1rem 0;
+}
+
+.socialIcons a {
+  color: #a37e58;
+  padding: 0 1rem;
+}
+
+.socialIcons a:hover {
+  color: #fcfbe3;
+}
 /* FOOTER */
 footer {
-    background-color: #755c3b;
-    padding: 0.75rem;
-    color: #fcfbe3;
-    text-align: center;
-    font-size: 1.25rem;
-    margin-top: 1rem;
-  }
-  
-  footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 0.50fr;
-  }
-  
+background-color: #755c3b;
+padding: 0.75rem;
+color: #fcfbe3;
+text-align: center;
+font-size: 1rem;
+margin-top: 1rem;
+}
+
+footer {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 0.50fr;
+}
+
   /* MEDIA QUERIES */
   @media screen and (max-width: 1024px) {
     nav ul {
